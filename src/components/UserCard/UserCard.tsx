@@ -14,7 +14,7 @@ export function Card(props:props){
     const [showMissions, setShowMissions] = useState(false);
     const handleClick = () => {
         setShowMissions(!showMissions);
-        {showMissions && <MisionsFromServersF id={props.id} />}
+        // {showMissions && <MisionsFromServersF id={props.id} />}
       };
       console.log(props.id)
     return(
@@ -23,7 +23,13 @@ export function Card(props:props){
         <p className="name" > {props.name}</p>
            <p className="email">{props.email}</p>
            <button className="button" onClick={handleClick}>click here to show list from url addres</button>
-           {showMissions && <MisionsFromServersF id={props.id} />}
+           <ul>
+        {showMissions && (
+          <li id="li">
+            <MisionsFromServersF id={props.id} />
+          </li>
+        )}
+      </ul>
         </div>
     )
 }

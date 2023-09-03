@@ -19,6 +19,7 @@ export function MisionsFromServersF(props:props) {
   if(items.length>0){
   return(
     <div>
+    {/* for(let i=0;i<=0;i++){<p>{items[i].title}</p>} */}
     <p>{items[0].title}</p>
     <p>{items[1].title}</p>
     <p>{items[2].title}</p>
