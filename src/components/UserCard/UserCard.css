@@ -1,0 +1,21 @@
+.div{
+    /* display: flex; */
+    height:350px;
+    width: 300px;
+    border: solid black;
+    border-radius: 30px;
+}
+.name{
+    margin-top: 20px;
+    margin: 50px;
+    color: black;
+    font-size: 30px;
+}
+.email{
+    /* margin: 40px; */
+    color: blue;
+    font-size: larger;
+}
+.button{
+    
+}
